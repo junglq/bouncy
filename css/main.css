@@ -156,7 +156,7 @@ body {
 .nav__link.active:before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 105%;
   width: 100%;
   height: 2px;
   background-color: #f1f1f1;
@@ -1638,7 +1638,7 @@ input:focus:-ms-input-placeholder {
   }
   .header__list li {
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   .about__first {
     padding: 50px 0px;
@@ -1866,5 +1866,8 @@ input:focus:-ms-input-placeholder {
   }
   .nav__link {
     font-size: 20px;
+  }
+  .header__list li {
+    margin-bottom: 9px !important;
   }
 }

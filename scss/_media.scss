@@ -140,7 +140,7 @@
 	}
 	.header__list li {
 		margin-left: 0;
-		margin-bottom: 30px;
+		margin-bottom: 30px !important;
 	}
 	.about__first {
 		padding: 50px 0px;
@@ -331,5 +331,8 @@
 	}
 	.nav__link {
 		font-size: 20px;
+	}
+	.header__list li {
+		margin-bottom: 9px !important;
 	}
 }
