@@ -64,7 +64,18 @@ $(document).ready(function () {
         }, 1000)
     })
 
-})
+    // Animation items
 
+    const animItems = document.querySelectorAll('.anim-items');
 
-
+    if (animItems.length > 0) {
+        function animItemHeight() {
+            for (let index = 0; index < animItems.lenght; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                console.log(animItemHeight);
+            }
+        }
+        animItemHeight();
+    }
+});
