@@ -75,8 +75,9 @@ $(document).ready(function () {
     let intro = $(".intro");
     let introH = intro.innerHeight();
 
-    $(".intro__arrow").on("click", function (event) {
+    $(".intro__arrow").on("click resize", function (event) {
         event.preventDefault();
+        introH = intro.innerHeight();
         $("html,body").animate({
             scrollTop: introH - 59
         }, 1000)
