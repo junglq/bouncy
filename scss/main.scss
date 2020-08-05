@@ -121,6 +121,9 @@ body {
     position: relative;
     & li {
         margin-left: 30px;
+        &:first-child {
+            margin: 0;
+        }
     }
 }
 

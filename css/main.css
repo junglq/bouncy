@@ -140,6 +140,10 @@ body {
   margin-left: 30px;
 }
 
+.header__list li:first-child {
+  margin: 0;
+}
+
 .nav__link {
   color: #fff;
   display: block;
