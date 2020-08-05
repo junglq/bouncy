@@ -81,6 +81,9 @@ $(document).ready(function () {
             scrollTop: introH - 59
         }, 1000)
     })
+
+    AOS.init();
+
 })
 
 
