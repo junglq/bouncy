@@ -238,6 +238,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 30px;
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease;
+    }
 }
 
 .about__first--text {
@@ -245,12 +253,39 @@ body {
     line-height: 1.78;
     letter-spacing: 0.7px;
     margin-bottom: 30px;
+    transform: translate(-120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease 0.4s;
+    }
+}
+
+.btn-about {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.8s ease;
+    &.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.8s ease 0.8s;
+    }
 }
 
 .about__first--ipad {
     flex: 0 0 40%;
     display: flex;
     justify-content: flex-end;
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 0.8s ease;
+    }
 }
 
 .about__first--ipad img {
