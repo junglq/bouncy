@@ -546,6 +546,7 @@ body {
   letter-spacing: 4px;
   opacity: 0;
   z-index: 11;
+  cursor: pointer;
 }
 
 .overlay {
@@ -786,15 +787,19 @@ body {
   color: #464646;
   font-size: 16px;
   position: relative;
+  padding-bottom: 15px;
 }
 
 .portfolio__filter--link:after {
   content: "";
   display: block;
   height: 2px;
-  width: 100%;
+  width: 60%;
   position: absolute;
   top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: #19bd9a;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
@@ -806,14 +811,15 @@ body {
 }
 
 .portfolio__filter--photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-template: repeat(4, fr);
+  gap: 10px;
+  max-width: 1110px;
 }
 
 .portfolio__filter--photo--item img {
   max-width: 100%;
-  width: 100%;
   display: block;
   height: auto;
 }
