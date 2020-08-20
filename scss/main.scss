@@ -690,10 +690,6 @@ body {
 }
 
 .portfolio__filter--photo {
-    display: grid;
-    grid-template: repeat(4, fr);
-    gap: 10px;
-    max-width: 1110px;
 }
 
 .portfolio__filter--photo--item {

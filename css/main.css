@@ -810,14 +810,6 @@ body {
   opacity: 1;
 }
 
-.portfolio__filter--photo {
-  display: -ms-grid;
-  display: grid;
-  grid-template: repeat(4, fr);
-  gap: 10px;
-  max-width: 1110px;
-}
-
 .portfolio__filter--photo--item img {
   max-width: 100%;
   display: block;
